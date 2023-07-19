@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sara Latorre WDD 330 Frontend Devolpment II Portfolio">
+    <title>WDD 330 Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <main>
+        <h1>Sara Latorre - WDD 330 Portfolio</h1>
+    <div class="moviePlanner">
+        <div class="details">
+            <div class="title">
+                <h2>Movie Planner Night</h2>
+                <h3>Individual Project</h3>
+            </div>
+            <p>Movie Planner Night is a web application that allows users to plan and organize movie nights with their friends or family. Users can search for movies, get suggestions, and save their movie night details for future reference. The application uses an external movie database API to fetch movie data based on user input and provides a user-friendly interface for planning movie nights.</p>
+            <h4>Front-End Technology Stack:</h4>
+            <ul>
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript</li>
+                <li>Parcel: A build tool that supports fast and efficient asset bundling and development environment setup.</li>
+                <li>External Movie Database API: The application fetches movie data from an external API to provide movie suggestions based on user input.</li>
+            </ul>
+            <h4>Key Features</h4>
+            <ul>
+                <li><strong>Movie Search:</strong> The application allows users to search for movies by entering the movie title. It then fetches movie suggestions from the external database and displays them as a dropdown for selection.</li>
+                <li><strong>Movie Night Planning:</strong> Users can plan their movie nights by selecting a movie from the suggestions, entering the date and time of the movie night, and adding any notes or comments related to the event.</li>
+                <li><strong>Local Storage:</strong> The application uses local storage to save the planned movie nights, allowing users to view and access their movie night details even after refreshing the page. We also use local storage to save the favorite and watch lists of the user. Using this data we can then create personalized movie suggestions.</li>
+                <li><strong>Movie Lists:</strong> Creation of various movie lists for the home page, such as movies currently in theaters, top-rated movies, family movies, action movies, etc. by doing GET requests.</li>
+                <li><strong>User-Friendly Interface:</strong> The application provides an intuitive and easy-to-use interface, making it convenient for users to plan and manage their movie nights with ease.</li>
+            </ul>
+        </div>
+        <div id="demoContainer">
+            <h3>Live Demo</h3>
+            <iframe src="https://movie-night-planner.netlify.app/" frameborder="0"></iframe>
+            <p>Link: <a target="_blank" href="https://movie-night-planner.netlify.app/">Movie Night Planner</a></p>
+             <a href="https://trello.com/b/DKKmVP4A/movienightplanner" target="_blank">Trello Planning</a>
+        </div>        
+    </div>
+
+    <div class="sleepOutside">
+        <div class="details">
+            <div class="title">
+                <h2>Sleep-Outside</h2>
+                <h3>Group Project</h3>
+            </div>
+            <p>Sleeping Outside is a E-Commerce website that aims to offer a wide range of outdoor sleeping products, including tents, sleeping bags, backpacks, and hammocks. The website provides a user-friendly shopping experience, thanks to its single-page application (SPA) architecture, which allows users to explore different products without the need for page reloads. The product data is retrieved from a server.</p>
+            <h4>Front-End Technology Stack:</h4>
+            <ul>
+                <li>Node.js</li>
+                <li>JavaScript</li>
+                <li>Vite: A build tool that supports fast and efficient asset bundling and development environment setup.</li>
+                <li>HTML5 / CSS3</li>
+                <li>Jwt-decode: A JavaScript library used for decoding JSON Web Tokens on the client-side.</li>
+            </ul>
+            <h4>Key Features</h4>
+            <ul>
+                <li><strong>Product Pages:</strong> The website has dedicated pages for tents, sleeping bags, backpacks, and hammocks. Each product category page provides a list of relevant products along with their images, descriptions, and prices.</li>
+                <li><strong>Product Detail Page:</strong>  When a user clicks on a product from any category page, they are taken to the product detail page. Here, they can view more detailed information about the selected product, such as specifications, customer reviews, and related items.</li>
+                <li><strong>Shopping Cart: </strong>Users can add products to their shopping cart, which displays the selected items and their total prices. Users can easily manage their cart contents and proceed to checkout.</li>
+                <li><strong>Authentication with JWT-decode: </strong>User authentication is implemented using JSON Web Tokens (JWTs). Upon successful authentication on the server-side, the server generates a JWT, which is sent to the client-side. The website uses the jwt-decode library to extract user information from the JWT and manage authenticated user sessions.</li>
+                <li><strong>Server Data Retrieval: </strong>The product information is fetched from the server using both GET and POST requests. GET requests are used to fetch product details for display on various pages, while POST requests are specifically employed during the checkout process. These POST requests are responsible for transmitting user's order information securely to the server for processing, enabling the website to handle large inventories efficiently and provide the most up-to-date product data.</li>
+            </ul>
+        </div>  
+        <div id="demoContainer">
+            <h3>Live Demo</h3>
+            <iframe src="https://sleep-outside.netlify.app/" frameborder="0"></iframe>
+            <p>Link: <a href="https://sleep-outside.netlify.app/" target="_blank">Sleep-Outside</a></p>
+            <a href="https://trello.com/b/7gJA1pow/sleepoutside" target="_blank">Trello Planning</a>
+        </div>    
+    </div>
+    </main>
+</body>
+</html>
