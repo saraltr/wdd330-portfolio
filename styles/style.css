@@ -3,7 +3,7 @@
     --secondary-color: #7e419d;
     --gradient: linear-gradient(to right, #310e92, #011663);
     --second-gradient: linear-gradient(to right, #e0eafcba, #f0f7ffc1);
-    --third-gradient: linear-gradient(to right, #e0eafc, #d5e7ff);
+    --third-gradient: linear-gradient(to right, #edf1f9, #d0e0f6);
 }
 
 * {
@@ -59,7 +59,7 @@ h4 {
 .moviePlanner, .sleepOutside {
     margin: 20px;
     padding: 2rem;
-    background-image: var(--third-gradient);
+    background-image: var(--second-gradient);
     background-color: var(--primary-color);
     border-radius: 10px;
     filter: drop-shadow(0 0 0.70rem #acb9d4);
@@ -93,7 +93,7 @@ footer {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 10px;
-        background-image: var(--second-gradient);
+        background-image: var(--third-gradient);
         background-color: var(--primary-color);
         border-radius: 10px;
         filter: drop-shadow(0 0 0.70rem #acb9d4);
