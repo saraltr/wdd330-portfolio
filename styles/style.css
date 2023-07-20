@@ -16,7 +16,7 @@ body {
     background: var(--gradient);
 }
 
-h1, h2, h3, h4, p, ul li, a {
+h1, h2, h3, h4, p, ul li{
     background-clip: text;
     -webkit-background-clip: text; 
     color: transparent;
@@ -28,9 +28,17 @@ h1 {
     background-image: var(--second-gradient);
 }
 
-h4, p, a, ul li {
+a {
+    color: var(--primary-color);
+}
+
+h4, p, ul li {
     background-image: var(--gradient);
 }
+
+/* a {
+    text-decoration: underline;
+} */
 
 h2, h3 {
     color: var(--primary-color);
