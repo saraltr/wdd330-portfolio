@@ -1,9 +1,9 @@
 :root {
     --primary-color: #1640a2;
     --secondary-color: #7e419d;
-    --gradient: linear-gradient(to right, #0575e6, #021b79);
+    --gradient: linear-gradient(to right, #310e92, #011663);
     --second-gradient: linear-gradient(to right, #e0eafcba, #f0f7ffc1);
-
+    --third-gradient: linear-gradient(to right, #e0eafc, #d5e7ff);
 }
 
 * {
@@ -24,9 +24,8 @@ h1, h2, h3, h4, p, ul li{
 }
 h1 {
     text-align: center;
-    /* background: ; */
     padding: 20px;
-    background-image: var(--second-gradient);
+    background-image: var(--gradient);
 }
 
 a {
@@ -60,12 +59,32 @@ h4 {
 .moviePlanner, .sleepOutside {
     margin: 20px;
     padding: 2rem;
-    background-image: var(--second-gradient);
+    background-image: var(--third-gradient);
     background-color: var(--primary-color);
     border-radius: 10px;
     filter: drop-shadow(0 0 0.70rem #acb9d4);
 }
 
+.hero {
+    background-image: url("../images/wddheader.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
+  
+.hero-content {
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    background: linear-gradient(to right, #e0eafc8e, #cfdef3b6);;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--third-gradient);
+    color: var(--primary-color);
+}
 
 @media screen and (min-width: 700px) {
     .moviePlanner, .sleepOutside {
